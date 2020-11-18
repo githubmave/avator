@@ -1,21 +1,19 @@
+import ansList from './answs'
+
 const answbook = {
         Tom :  {
 
             myAnsws:  [
-            "Nov 15",
-            "mobile",
-            "goat"
-
+            
+                 ansList[0]
             ]
         },
 
         Jerry : {
 
             myAnsws:  [
-            "Dec 25",
-            "headphone",
-            "dog"
-          ]
+               ansList[1]
+            ]
        }
 
 }
