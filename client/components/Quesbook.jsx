@@ -22,7 +22,7 @@ const Quesbook = (props) => {
         <ul  className="name">
             {quesList.map((ques,i)=>{
              
-                return <li className="country" key={i}><Link to = {`/answList/${ques}`}>{ques}</Link></li>
+                return <li className="country" key={i}><Link to = {`/quesList/${ques}`}>{ques}</Link></li>
 
             })}                
 
