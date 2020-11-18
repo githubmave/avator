@@ -18,10 +18,10 @@ const QToMan = ({match}) => {
         <p class="name"> Question for the day </p>
 
         <ul class="country">
-                { quesList.map( (ques,id)=> {
+                { nameList.map( (name,id)=> {
                     let index=id.toString()
 
-                   return <li className="name" key={id}><Link to = {`/quesList/${ques}/${index}`}>{ques}</Link></li>
+                   return <li className="name" key={id}><Link to = {`/quesList/${ques}/${index}`}>{name}</Link></li>
 
                    })
                 } 

@@ -47,6 +47,11 @@ const App = () => {
           <Route path='/answList/:name/:index' component={ShowAnsws} />
         </p>
 
+        <p class="country">
+          <Route path='/quesList/:ques/:index' component={ShowAnsws} />
+        </p>
+
+
 
           {/* <Route path='/rank/:rank' component={ShowRank}/>
         <Route path='/rank/:rank/:name' component={Description} /> */}
