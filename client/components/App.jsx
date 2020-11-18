@@ -6,6 +6,8 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom'
 // import Description from './Description'
 import Answbook from './Answbook'
 import  ShowAnsws from './ShowAnsws'
+import  ManToQ from './ManToQ'
+
 
 // import bookData from '../../data/answbook'
 
@@ -24,6 +26,7 @@ const App = () => {
        
         <Home /> */}
         <Answbook />
+        <ManToQ />
         {/* <ShowAnsws /> */}
        
         <p class="description">
