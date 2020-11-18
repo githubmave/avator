@@ -21,7 +21,7 @@ const App = () => {
     <Router>
       {/* <h1>Navigating the taxonomic routes</h1> */}
       {/* This 'main' div is only for styling (so we can use flexbox) */}
-      <div class ='beer'>
+      <div className ='beer'>
         {/* <Nav />
        
         <Home /> */}
@@ -29,7 +29,7 @@ const App = () => {
         <ManToQ />
         {/* <ShowAnsws /> */}
        
-        <p class="description">
+        <p className="description">
           <Route path='/answList/:name' component={ShowAnsws}/>
         </p>
         {/* <Route path='/rank/:rank' component={ShowRank}/>

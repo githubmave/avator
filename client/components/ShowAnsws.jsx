@@ -13,12 +13,12 @@ const ShowAnsws = ({match}) => {
     // const rankArray = ranks[rank]
    
      return (
-      <div class="beer">
+      <div className="beer">
         <h2>{name} Says</h2>
-/            <ul class="name">
+/            <ul className="name">
                 {ansArr.map((ans, i) => {
                 
-                    return <li class="country" key={i}><Link to = {`/answList/${name}/${ans}`}>{ans}</Link></li>
+                    return <li className="country" key={i}><Link to = {`/answList/${name}/${ans}`}>{ans}</Link></li>
                 
                 })
                 } 

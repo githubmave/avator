@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom'
 
 import replList from '../../data/replyers'
 import answsArr from '../../data/answs'
+import quesList from '../../data/quess'
+
 
 
 
@@ -23,25 +25,20 @@ const Answbook = (props) => {
      
 
    return(
-     <div class="beer">   
+     <div className="beer">   
        
-        <p class="name">Name in Answbook </p>
+        <p className="name">Name in Answbook </p>
         
 
         <ul  >
             {answList.map((name,i)=>{
+             
+                return <li className="name" key={i}><Link to = {`/answList/${name}`}>{name}</Link></li>
 
-                
-
-                
-                return <li class="name" key={i}><Link to = {`/answList/${name}`}>{name}</Link></li>
-                // return <li key={i}><Link to = {`/rank/${rank}/${item.name}`}>{item.name}</Link></li>
-
-
-            })}
-
+            })}                
 
          </ul>
+
 
     </div>
       
