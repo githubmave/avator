@@ -33,7 +33,7 @@ const App = () => {
         <Answbook />
         {/* <ManToQ /> */}
         {/* <ShowAnsws /> */}
-        < QToMan />
+        < Quesbook />
        
         <p class="name">
           <Route path='/answList/:name' component={ManToQ}/>
@@ -46,6 +46,8 @@ const App = () => {
         <p class="country">
           <Route path='/answList/:name/:index' component={ShowAnsws} />
         </p>
+
+
           {/* <Route path='/rank/:rank' component={ShowRank}/>
         <Route path='/rank/:rank/:name' component={Description} /> */}
       </div>

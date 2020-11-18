@@ -7,10 +7,10 @@ import nameList from '../../data/repliers'
 
 import {Link} from 'react-router-dom'
 
-const QToMan = () => {
-    //let {name} = match.params
+const QToMan = ({match}) => {
+    let {ques} = match.params
 
-   // let nameIn = nameList.findIndex( (el) => el==name)
+   let quesIn = quesList.findIndex( (el) => el==ques)
   
      return (
       <div class="beer">
