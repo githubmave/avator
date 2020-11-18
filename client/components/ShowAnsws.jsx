@@ -1,8 +1,5 @@
 import React from 'react'
-//import ranks from '../../data/ranks'
 import bookData from '../../data/answbook'
-
-
 import {Link} from 'react-router-dom'
 
 const ShowAnsws = ({match}) => {
