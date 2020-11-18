@@ -15,7 +15,7 @@ const ShowAnsws = ({match}) => {
    
      return (
       <div className="beer">
-        <h2 className="name"> Answer from {name} for {quOfMan} </h2>
+        <h2 className="name"> Answer from {name} for QUES      " {quOfMan} "</h2>
             <ul className="name">
                   <li className="country">{ansForMan}</li>
             </ul>

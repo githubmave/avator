@@ -33,7 +33,7 @@ h1 {
 .beer p:last-child {
   display: flex;
   justify-content: space-between;
-  color: darkgray;
+  color: rgb(201, 106, 106);
 }
 
 .beer .country {
