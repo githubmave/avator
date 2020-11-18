@@ -8,13 +8,15 @@ const ShowAnsws = ({match}) => {
      let {name,index} = match.params
      const ansArr=bookData[name].myAnsws
      let quesId = Number(index)
+
+     let quOfMan = quesList[quesId]
      const ansForMan=ansArr[quesId]
 
    
      return (
       <div className="beer">
-        <h2 className="name"> Answer from {name} </h2>
-/            <ul className="name">
+        <h2 className="name"> Answer from {name} for {quOfMan} </h2>
+            <ul className="name">
                   <li className="country">{ansForMan}</li>
             </ul>
 
