@@ -12,7 +12,7 @@ const ShowAnsws = ({match}) => {
      return (
       <div className="beer">
         <h2 className="name"> Answer from {name} </h2>
-/            <ul className="name">
+          <ul className="name">
                   <li className="country">{ansForMan}</li>
             </ul>
 
