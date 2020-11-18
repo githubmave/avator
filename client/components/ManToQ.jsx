@@ -1,6 +1,6 @@
 import React from 'react'
 import bookData from '../../data/answbook'
-//import quesList from '../../data/quess'
+import quesList from '../../data/quess'
 import quBookData from '../../data/quesbook'
 import nameList from '../../data/repliers'
 
@@ -12,10 +12,10 @@ const ManToQ = ({match}) => {
 
     let nameIn = nameList.findIndex( (el) => el==name)
       
-    console.log("index of name", name , nameIn   )
+    //console.log("index of name", name , nameIn   )
           
 
-    let  quesList= Object.keys(quBookData)
+    //let  quesList= Object.keys(quBookData)
    
      return (
       <div className="beer">
@@ -24,9 +24,9 @@ const ManToQ = ({match}) => {
         <li>Have you ever been in igloo?</li>
 
         <ul className="name">
-                { quesList.map( (ques,i)=> {
+                { quesList.map( (ques,id)=> {
 
-                   return <li key={i}><Link to = {`/answList/${name}/${nameIn}`}>{ques}</Link></li>
+                   return <li key={id}><Link to = {`/answList/${name}/${id}`}>{ques}</Link></li>
 
                    })
                 } 

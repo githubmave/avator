@@ -3,7 +3,7 @@ import bookData from '../../data/answbook'
 import {Link} from 'react-router-dom'
 
 const ShowAnsws = ({match}) => {
-     let {name} = match.params
+     let {name,nameIn} = match.params
      const ansArr=bookData[name].myAnsws
 
      console.log("answers : ",ansArr)

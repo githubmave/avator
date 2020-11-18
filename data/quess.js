@@ -1,8 +1,8 @@
 const quess = [
 
-    "Mon ques",
-    "Tues ques",
-    "Wedn ques"
+    "Lucky date",
+    "Found with",
+    "First pet"
 
 
 ]
