@@ -27,7 +27,6 @@ const ManToQ = ({match}) => {
                 { quesList.map( (ques,i)=> {
 
                    return <li key={i}><Link to = {`/answList/${name}/${nameIn}`}>{ques}</Link></li>
-                //    return <li key={i}><Link to = {`/answList/${name}/${ans}`}>{ans}</Link></li>
 
                    })
                 } 

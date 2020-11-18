@@ -32,8 +32,7 @@ const App = () => {
         <p className="description">
           <Route path='/answList/:name' component={ManToQ}/>
         </p>
-        {/* <Route path='/rank/:rank' component={ShowRank}/>
-        <Route path='/rank/:rank/:name' component={Description} /> */}
+          <Route path='/answList/:name/:nameIn' component={ShowAnsws} />
       </div>
     </Router>
     </>
