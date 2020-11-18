@@ -19,10 +19,10 @@ const Answbook = (props) => {
         
         
 
-        <ul  >
+        <ul  className="name">
             {answList.map((name,i)=>{
              
-                return <li className="name" key={i}><Link to = {`/answList/${name}`}>{name}</Link></li>
+                return <li className="country" key={i}><Link to = {`/answList/${name}`}>{name}</Link></li>
 
             })}                
 
