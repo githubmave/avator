@@ -9,6 +9,9 @@ import Quesbook from './Quesbook'
 
 import  ShowAnsws from './ShowAnsws'
 import  ManToQ from './ManToQ'
+import  QToMan from './QToMan'
+
+
 
 
 // import bookData from '../../data/answbook'
@@ -30,10 +33,16 @@ const App = () => {
         <Answbook />
         {/* <ManToQ /> */}
         {/* <ShowAnsws /> */}
+        < QToMan />
        
         <p class="name">
           <Route path='/answList/:name' component={ManToQ}/>
         </p>
+
+        <p class="name">
+          <Route path='/quesList/:ques' component={QToMan}/>
+        </p>
+
         <p class="country">
           <Route path='/answList/:name/:index' component={ShowAnsws} />
         </p>
