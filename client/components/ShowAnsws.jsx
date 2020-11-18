@@ -1,5 +1,7 @@
 import React from 'react'
 import bookData from '../../data/answbook'
+import quesList from '../../data/quess'
+
 import {Link} from 'react-router-dom'
 
 const ShowAnsws = ({match}) => {
