@@ -11,27 +11,21 @@ const ManToQ = ({match}) => {
     let {name} = match.params
 
     let nameIn = nameList.findIndex( (el) => el==name)
-      
-    //console.log("index of name", name , nameIn   )
-          
-
-    //let  quesList= Object.keys(quBookData)
-   
+  
      return (
-      <div className="beer">
+      <div class="beer">
 
-        
-        <li>Have you ever been in igloo?</li>
+        <p class="name"> Question for the day </p>
 
-        <ul className="name">
+        <ul class="country">
                 { quesList.map( (ques,id)=> {
+                    let index=id.toString()
 
-                   return <li key={id}><Link to = {`/answList/${name}/${id}`}>{ques}</Link></li>
+                   return <li className="name" key={id}><Link to = {`/answList/${name}/${index}`}>{ques}</Link></li>
 
                    })
                 } 
         </ul>
-
 
       </div>
     )  

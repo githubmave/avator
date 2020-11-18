@@ -16,7 +16,7 @@ const Answbook = (props) => {
   return(
      <div className="beer">   
        
-        <p className="name">Name in Answbooks </p>
+        
         
 
         <ul  >

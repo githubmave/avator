@@ -3,22 +3,17 @@ import bookData from '../../data/answbook'
 import {Link} from 'react-router-dom'
 
 const ShowAnsws = ({match}) => {
-     let {name,nameIn} = match.params
+     let {name,index} = match.params
      const ansArr=bookData[name].myAnsws
+     let quesId = Number(index)
+     const ansForMan=ansArr[quesId]
 
-     console.log("answers : ",ansArr)
-    // const rankArray = ranks[rank]
    
      return (
       <div className="beer">
-        <h2>{name} Says</h2>
+        <h2 className="name"> Answer from {name} </h2>
 /            <ul className="name">
-                {ansArr.map((ans, i) => {
-                
-                    return <li className="country" key={i}><Link to = {`/answList/${name}/${ans}`}>{ans}</Link></li>
-                
-                })
-                } 
+                  <li className="country">{ansForMan}</li>
             </ul>
 
       </div>
