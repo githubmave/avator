@@ -26,11 +26,11 @@ const App = () => {
        
         <Home /> */}
         <Answbook />
-        <ManToQ />
+        {/* <ManToQ /> */}
         {/* <ShowAnsws /> */}
        
         <p className="description">
-          <Route path='/answList/:name' component={ShowAnsws}/>
+          <Route path='/answList/:name' component={ManToQ}/>
         </p>
         {/* <Route path='/rank/:rank' component={ShowRank}/>
         <Route path='/rank/:rank/:name' component={Description} /> */}
